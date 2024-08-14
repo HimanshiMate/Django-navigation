@@ -1,0 +1,31 @@
+
+.nav-link{
+    color: black;
+    margin-left: 20px;
+    margin-top: 30px;
+    font-size: 15px;
+}
+.navbar-brand{
+    margin-left: 100px;
+    margin-top: 0px;
+}
+#nav img{
+    margin-top: -30px;
+}
+#nav-item{
+    margin-left: 50px;
+}
+/* =====================footer=========== */
+.card-header{
+    text-align: left;
+}
+
+.list-group-item{
+    text-align: left;
+    font-size: 13px;
+    color: rgb(108, 106, 106);
+}
+p{
+    color: rgb(108, 106, 106);
+    font-size: 14px;
+}

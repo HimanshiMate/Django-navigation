@@ -1,0 +1,285 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+</head>
+
+<body>
+    <center>
+        <div style="background-color: black;">
+            <div class="container">
+                <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3" style="text-align: center;">
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <div> <i class="bi bi-linkedin"></i></div>
+                            </div>
+                            <div class="col">
+                                <div><i class="bi bi-telegram"></i></div>
+                            </div>
+                            <div class="col ">
+                                <div><i class="bi bi-facebook"></i></div>
+                            </div>
+                            <div class="col ">
+                                <div><i class="bi bi-twitter"></i></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="{% static 'images/gyproc.jpg' %}" width="200px" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="{% url 'base' %}">HOMEOWNERS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'home' %}">PROFESSIONALS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">PRODUCTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">RESOURCES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CAREERS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">FAQ'S</a>
+                        </li>
+                        <li class="nav-item" id="nav-item">
+                            <a class="nav-link" href="#"><img src="{% static 'images/msglogo.jpg' %}" width="20px"
+                                    alt=""> CONTACT US</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a id="nav" class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"><img
+                                    src="{% static 'images/saintlogo.jpg' %}" alt=""></a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </center>
+    {% block content %}
+
+
+    {% endblock %}
+    <center>
+
+
+        <hr style="margin-bottom:-70px; background-color:rgb(8, 69, 192);height: 3px;">
+        <!-- ============homeowner============== -->
+        <!-- <div class="container"> -->
+        <div class="row" style=" padding: 100px; margin-top: -50px; ">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header"><b>Homeowners</b></div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Overview</li>
+                        <li class="list-group-item">Designer False Ceilings</li>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Living Room Ceiling <br> Designs</li>
+                            <li class="list-group-item">Bedroom Ceiling <br> Designs</li>
+                            <li class="list-group-item">Kid's Room Ceiling <br> Designs</li>
+                            <li class="list-group-item">Kitchen Ceiling Designs</li>
+                        </ul>
+                        <li class="list-group-item">360 Ceilings Visualizer</li>
+                        <li class="list-group-item">Enquire Now</li>
+                        <li class="list-group-item">Blogs</li>
+                    </ul>
+
+                </div>
+            </div>
+            <!-- ============Professional======== -->
+            <div class="col">
+                <div class="card">
+                    <div class="card-header"><b>Professionals</b></div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Overview</li>
+                        <li class="list-group-item">Professional solutions</li>
+                        <li class="list-group-item">Sector</li>
+                        <li class="list-group-item">Blogs</li>
+                    </ul>
+                    <!-- ===================== -->
+                    <!-- <div class="card-group">
+                        <div class="container" >
+                            <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3" style="text-align: center;">
+                              <div class="col">
+                                <div class="p-0 border bg-light"><i class="bi bi-telegram"></i></div>
+                              </div>
+                             <div class="col">
+                                <div class="p-0 border bg-light"><i class="bi bi-twitter"></i></div>
+                              </div>
+                              <div class="col">
+                                <div class="p-0 border bg-light"><i class="bi bi-facebook"></i></div>
+                              </div>
+                              <div class="col">
+                                <div class="p-0 border bg-light"> <i class="bi bi-linkedin"></i></div>
+                              </div>
+                            </div>
+                        </div>    
+                    </div> -->
+                </div>
+            </div>
+            <!-- ===========Products======== -->
+            <div class="col">
+                <div class="card">
+                    <div class="card-header"><b>Products</b></div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">PlasterBoards</li>
+                        <li class="list-group-item">Metal Framing & Accessories</li>
+                        <li class="list-group-item">Jointing & Finishing products</li>
+                        <li class="list-group-item">Gypsum Plasters</li>
+                        <li class="list-group-item">Ceiling Tiles</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- ===================Resource========= -->
+            <div class="col">
+                <div class="card">
+                    <div class="card-header"><b>Resources</b></div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Downloads </li>
+                        <li class="list-group-item">Videos</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- ===========About=========== -->
+            <div class="col-sm-12 col-md-6 col-xl-3 col-xxl-2">
+                <div class="card">
+                    <div class="card-header"><b>About</b></div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Company Profile</li>
+                        <li class="list-group-item">Skill Initiatives</li>
+                        <li class="list-group-item">Gyproc Trophy</li>
+                        <li class="list-group-item">Substainability</li>
+                        <li class="list-group-item">Press Releases</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- ===========Disclamer========= -->
+            <div class="col">
+                <div class="card">
+                    <div class="card-header"><b>Disclaimer</b></div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item" style="font-size: 15px; color: black;"><b>Careers</b></li>
+                        <li class="list-group-item" style="font-size: 15px; color: black;"><b>FAQ'S</b></li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <!-- ============gyproc India Corporate Office=========== -->
+
+            <div class="col">
+                <div class="card">
+                    <div class="card-header"><b>Gyproc India Corporate Office</b></div>
+                    <p>Saint-Gobain India Pvt Ltd - Gyproc Business,
+                        Leela Business Park, 5th Level,
+                        Opposite Leela Hotel, Andheri-Kurla Road,
+                        Andheri (East), Mumbai - 400059,
+                        Maharashtra, India</p>
+                    <div><b>Saint-Gobain group</b></div>
+                    <p>Saint-Gobain India
+                        Weber</p>
+                </div>
+            </div>
+        </div>
+        <hr style="margin-top: -80px; background-color:rgb(8, 69, 192);height: 3px;">
+        <!-- </div> -->
+    </center>
+    <!-- <div>© 2024 Saint Gobain India Pvt Ltd. All rights reserved</div> -->
+    <div class="container">
+       
+        <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3" style="text-align: center;">
+            <div class="col" style="width: 500px; text-align: left;">© 2024 Saint Gobain India Pvt Ltd. All rights reserved</div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="container">
+                <div class="row" style="color: gray;">
+                    <div class="col ">
+                        <div><i class="bi bi-facebook"></i></div>
+                    </div>
+                    <div class="col ">
+                        <div><i class="bi bi-twitter"></i></div>
+                    </div>
+                    <div class="col">
+                        <div> <i class="bi bi-youtube"></i></div>
+                    </div>
+                    <div class="col">
+                        <div> <i class="bi bi-linkedin"></i></div>
+                    </div>
+                    <div class="col">
+                        <div><i class="bi bi-telegram"></i></div>
+                    </div>
+                    <div class="col">
+                        <div><i class="bi bi-instagram"></i></div>
+                    </div>
+                   
+                   
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- <div class="container">
+        <div class="row"> -->
+            <!-- <div> © 2024 Saint Gobain India Pvt Ltd. All rights reserved</div> -->
+            <!-- </div> -->
+            <!-- <div class="container">
+                <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3" style="text-align: center;">
+                    <div class="col">
+                        <div class="p-0 border bg-light"><i class="bi bi-telegram"></i></div>
+                    </div>
+                    <div class="col">
+                        <div class="p-0 border bg-light"><i class="bi bi-twitter"></i></div>
+                    </div>
+                    <div class="col">
+                        <div class="p-0 border bg-light"><i class="bi bi-facebook"></i></div>
+                    </div>
+                    <div class="col">
+                        <div class="p-0 border bg-light"> <i class="bi bi-linkedin"></i></div>
+                    </div>
+                </div>
+            </div> -->
+        <!-- </div>
+    </div> -->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
