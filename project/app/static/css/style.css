@@ -5,15 +5,19 @@
     margin-top: 30px;
     font-size: 15px;
 }
-.navbar-brand{
-    margin-left: 100px;
+.navbar-brand {
+    margin-left: 500px;
     margin-top: 0px;
 }
-#nav img{
+/* #nav img{
     margin-top: -30px;
-}
-#nav-item{
+} */
+/* .nav-item a{
     margin-left: 50px;
+} */
+
+#nav{
+    margin-left: 20px ;
 }
 /* =====================footer=========== */
 .card-header{
